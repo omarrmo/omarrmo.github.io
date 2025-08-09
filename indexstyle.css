@@ -42,9 +42,7 @@ body {
     background-color: #111111;
     color: #dedcdc;
     position: fixed;
-    left: 0;
-    top: 0;
-    padding: 30px 20px;
+    padding-top: 6%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -138,18 +136,36 @@ body {
     margin-left: 20%;
     min-height: 100vh; 
     overflow-y: auto;
-    padding-top: 90px;
+    padding-top: 5%;
     color: #dedcdc;
     position: relative;
     z-index: 1; 
     
 }
 
+.topDiv{
+    display: flex; 
+    border-width: 1px;
+    width: 100%;  
+    padding-right: 2%; 
+    padding-left: 2%;
+    margin-bottom: 5%;
+}
+
 .title{
-    font-weight: 500;
-    margin-bottom: 100px;
-    padding-left: 50px;
+    font-weight: 300;
+    font-size: clamp(1.5rem, 2vw, 3rem);
     animation: fade-up 1s; 
+}
+
+.CalltoAction{
+    font-weight: 300;
+    font-size: clamp(0.4rem, 1vw, 3rem);
+    animation: fade-up 1s; 
+    color: #5297ffcc; 
+    text-decoration: none;
+    align-self: flex-end; 
+    margin-left: auto; 
 }
 
 
@@ -179,7 +195,6 @@ body {
     border-radius: 10px;
     text-align: center;
     display: flex; 
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -205,10 +220,9 @@ body {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
-    text-align: left;
+    text-align: center;
     display: flex; 
     flex-direction: column;
-    justify-content: center;
     padding-left: 5%;
     height: 100%;
 }
@@ -223,7 +237,6 @@ body {
     text-align: left;
     display: flex; 
     flex-direction: column;
-    justify-content: center;
     padding-left: 5%;
     height: 100%;
 }
@@ -232,7 +245,7 @@ body {
 .grid-container{
     display: grid; 
     grid-template-columns: 2fr 2fr 2fr 2fr;
-    grid-template-rows: 225px 225px 225px 225px;
+    grid-template-rows: 27vh 27vh 27vh 27vh;
     gap: 1.5em; 
     grid-template-areas: 
     "box-1 box-3 box-5 box-5"
@@ -253,6 +266,7 @@ body {
 
 .BoxHeading1{
     font-weight: 500;
+    font-size: clamp(1.5rem, 2.3vw, 3rem);
     animation: fade-up 1s; 
 }
 .BoxHeading2{
@@ -278,12 +292,28 @@ body {
     font-size: clamp(1rem, 1.7vw, 5rem);
     animation: fade-up 1s; 
     margin-bottom: 4%;
-    
+}
+
+.BoxHeading6{
+    font-weight: 300;
+    font-size: clamp(1rem, 1.7vw, 5rem);
+    animation: fade-up 1s; 
+    margin-bottom: 1%;
+    margin-top: 3%;
+}
+
+.BoxHeading7{
+    font-weight: 300;
+    font-size: clamp(1rem, 1.7vw, 5rem);
+    animation: fade-up 1s; 
+    margin-bottom: 1%;
+    margin-top: 3%;
 }
 
 .BoxInfoLine{
     color: #7d7d7d; 
     animation: fade-up 1s; 
+    
     
 }
 
@@ -302,11 +332,12 @@ body {
 }
 
 .AboutCall{
-    color: #1762d3cc; 
+    color: #5297ffcc; 
     animation: fade-up 1s; 
     text-decoration: none;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: clamp(0.4rem, 1vw, 3rem);
+
 }
 
 @keyframes fade-up{

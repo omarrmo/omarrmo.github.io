@@ -150,7 +150,7 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
   width: 50%;
   height: 80%;
-  
+  animation: fade-up 1s;  
 }
 
 
@@ -201,4 +201,17 @@ body {
 
 .contact-form button:hover {
   background-color: #2a5ca0;
+}
+
+
+@keyframes fade-up{
+    0%{
+        opacity: 0; 
+        transform: translateY(20px);
+    }
+
+    100%{
+        opacity: 1; 
+        transform: translateY(0px);
+    }
 }

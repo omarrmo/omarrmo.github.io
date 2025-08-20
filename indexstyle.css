@@ -86,8 +86,6 @@ body {
 .info-line {
     font-size: 0.9rem;
     white-space: nowrap; /* Prevent line breaks */
-    
-
 }
 
 .info-line i {
@@ -136,7 +134,7 @@ body {
     margin-left: 20%;
     min-height: 100vh; 
     overflow-y: auto;
-    padding-top: 5%;
+    padding-top: 4%;
     color: #dedcdc;
     position: relative;
     z-index: 1; 
@@ -339,6 +337,14 @@ body {
     font-size: clamp(0.4rem, 1vw, 3rem);
 
 }
+
+.report{
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    max-height: 80%;    
+}
+
 
 @keyframes fade-up{
     0%{

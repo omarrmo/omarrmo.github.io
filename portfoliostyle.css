@@ -86,8 +86,6 @@ body {
 .info-line {
     font-size: 0.9rem;
     white-space: nowrap; /* Prevent line breaks */
-    
-
 }
 
 .info-line i {
@@ -136,20 +134,85 @@ body {
     margin-left: 20%;
     min-height: 100vh; 
     overflow-y: auto;
-    padding-top: 5%;
+    padding-top: 4%;
     color: #dedcdc;
     position: relative;
     z-index: 1; 
-    
 }
 
+.title{
+    font-weight: 300;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    animation: fade-up 1s; 
+    padding-left: 3%;
+    padding-bottom: 4%;
+}
 
+.grid-container{
+    display: grid; 
+    grid-template-columns: 3.5fr 3.5fr;
+    grid-template-rows: 62vh 62vh;
+    gap: 1.5em; 
+    grid-template-areas: 
+    "box-1 box-2"
+    "box-3 box-4";
+    padding-bottom: 100px;
+    padding-left: 3%; 
+    padding-right: 3%; 
+
+}
+.box{
+    background-color: #1b1b1b;
+    border-color: #1f1f1f;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.Buttons1{
+    margin-left: 5%;
+    animation: fade-left 1s; 
+}
+
+.CrimeReport{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 10px 10px 0 0; 
+    padding-bottom: 7%;
+}
+
+.SkillButton{
+    border: 2px solid #2b2b2b;
+    background-color: transparent;
+    color: #7d7d7d;
+    padding: 1.2% 2% 1.2% 2%;
+    border-radius: 4px;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+.BoxHeading1{
+    color: #dedcdc; 
+    font-weight: 300;
+    font-size: clamp(1.5rem, 1.8vw, 3rem);
+    animation: fade-up 1s; 
+    padding-left: 5%;
+    text-decoration: none;
+
+}
+
+.box i{
+    padding-left: 2%;
+    font-size: 1rem;
+}
 
 .footer{
     background-color: #111111;
     height: 80px;
     width: 100%;
 }
+
 
 
 @keyframes fade-up{
@@ -161,6 +224,18 @@ body {
     100%{
         opacity: 1; 
         transform: translateY(0px);
+    }
+}
+
+@keyframes fade-left{
+    0%{
+        opacity: 0; 
+        transform: translateX(-20px);
+    }
+
+    100%{
+        opacity: 1; 
+        transform: translateX(0px);
     }
 }
 

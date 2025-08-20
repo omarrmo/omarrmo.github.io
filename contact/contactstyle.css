@@ -1,0 +1,204 @@
+/* Light version */
+@font-face {
+    font-family: 'BDOGrotesk';
+    src: url('../fonts/BDOGrotesk-Light.otf') format('opentype');
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+}
+
+/* Bold version */
+@font-face {
+    font-family: 'BDOGrotesk';
+    src: url('../fonts/BDOGrotesk-Bold.otf') format('opentype');
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BDOGrotesk';
+    src: url('../fonts/BDOGrotesk-Medium.otf') format('opentype');
+    font-weight: 500; /* Bold weight */
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'BDOGrotesk';
+    font-weight: 300;
+    display: flex;
+    height: 100vh;
+    background-color: #151515;
+}
+
+/* Vertical Header */
+.vertical-header {
+    width: 20%;
+    height: 100vh;
+    background-color: #111111;
+    color: #dedcdc;
+    position: fixed;
+    padding-top: 6%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center; /* Centers child elements horizontally */
+    padding-top: 75px; 
+
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 5px auto; /* Centered with space below */
+}
+
+.name {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 2px;
+    position: relative;
+    width: 100%;
+}
+
+.left-align-container {
+    width: fit-content; /* Shrink to content width */
+    margin: 0 auto; 
+    padding-left: 0; /* Remove default padding */
+    text-align: left; /* Left-align contents */
+    padding-right: 65px;
+}
+
+.info-line {
+    font-size: 0.9rem;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.info-line i {
+    text-align: center;
+    margin-left: 5px;
+    /* Icons will now be left-aligned within the centered menu */
+}
+
+
+.menu ul {
+    padding-top: 65px;
+    list-style: none;
+    padding-left: 0;
+    width: fit-content; /* Shrink-to-fit content width */
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #dedcdc; 
+    width: 100%; /* Full width for text alignment */
+    font-size: 1.1rem;
+}
+
+.menu i {
+    width: 24px; /* Fixed icon width */
+    text-align: center;
+    margin-right: 12px;
+    /* Icons will now be left-aligned within the centered menu */
+}
+
+.menu li {
+    margin: 50px 0;
+}
+
+
+.menu a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px; /* Space between text and underline */
+}
+
+/* Main Content */
+.content {
+    width: 80%;
+    margin-left: 20%;
+    min-height: 100vh; 
+    overflow-y: auto;
+    padding-top: 4%;
+    color: #dedcdc;
+    position: relative;
+    z-index: 1; 
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+}
+
+.contact-form {
+  background-color: #1e1e1e;
+  padding: 2%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  width: 50%;
+  height: 80%;
+  
+}
+
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  font-size: 14px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background-color: #333333;
+  box-shadow: 0 0 5px #555555;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5297ffcc;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2a5ca0;
+}

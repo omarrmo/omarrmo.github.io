@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar Imad Remmo</title>
     <base href="index.html">
-    <link rel="stylesheet" href="portfoliostyle.css">
+    <link rel="stylesheet" href="contactstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
 </head>
@@ -31,33 +31,28 @@
             </div>
         </div>
     </header>
-    
-    <!-- Main Content -->
+
+
+     <!-- Main Content -->
     <main class="content">
-        <h1 class="title">All Projects</h1>
-         <div class="grid-container"> 
-            <div class="box" style="grid-area: box-1">
-                <img class ="CrimeReport" src="../img/CrimeReport.png" alt="Crime Dashboard">
-                <div class="Buttons1">
-                    <button class ="SkillButton">SQL</button>
-                    <button class ="SkillButton">Power BI</button>
-                    <button class ="SkillButton">Excel</button>
-                </div>
-                
-                <h1 class="BoxHeading1">Crime Analysis Report</h1>
-            </div>
+        <form class="contact-form" autocomplete="off" action="https://formspree.io/f/manbgvqw" method="POST">
+            <h2>Contact Me!</h2>
+            
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
 
-            <div class="box" style="grid-area: box-2"><h1 class="BoxHeading2"></div>
-            <div class="box" style="grid-area: box-3"><h1 class="BoxHeading3"></div>
-            <div class="box" style="grid-area: box-4"><h1 class="BoxHeading4"></div>
-        </div>
+            <label for="message">Message</label>
+            <textarea class="message" id="message" name="message" rows="5" required></textarea>
 
-        
+            <input type="text" name="_gotcha" style="display:none">
+            
+            <button type="submit">Send</button>
+        </form>
 
-        </div>
-        <div class="footer"> 
     </main>
-    
+
 </body>
 </html>

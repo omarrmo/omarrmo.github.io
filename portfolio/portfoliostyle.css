@@ -162,6 +162,7 @@
         "box-1 box-2"
         "box-3 box-4";
         grid-auto-rows: 1fr;
+        margin-bottom: 10%;
     }
 
 
@@ -189,7 +190,7 @@
         padding-bottom: 4%;
     }
     
-    
+
     .Buttons1{
         margin-left: 5%;
     }
@@ -333,6 +334,7 @@
         "box-3"
         "box-4";
         grid-auto-rows: 1fr;
+        margin-bottom: 10%;
     }
 
 
